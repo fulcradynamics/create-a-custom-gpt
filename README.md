@@ -1,10 +1,12 @@
 # 🤖 Setting up a Custom GPT with Fulcra Integration
 
+Fulcra Users who are already sending data to the Fulcra Platform can integrate the Fulcra Life API with ChatGPT's Custom GPT functionality to create new and exciting ways to interact with their data.
+
 You can create & configure your own ChatGPT custom GPT via the following process:
 
 ## ⚙️ [OAuth] Get Application Credentials
 
-OAuth applications allow ChatGPT to communicate with the Fulcra Life API on your behalf. Currently new applications are provisioned exclusively by Fulcra staff members. Reach out to a staff member on the Fulcra discord in [channel] and they can create a new OAuth application for you. You will receive two values that you will use when configuring your custom GPT, a **Client ID** and a **Client Secret**.
+OAuth applications allow ChatGPT to communicate with the Fulcra Life API on your behalf. Currently new applications are provisioned exclusively by Fulcra staff members. Reach out to a staff member on the Fulcra discord in `#custom-gpt-fulcra` and they can create a new OAuth application for you. You will receive two values that you will use when configuring your custom GPT, a **Client ID** and a **Client Secret**.
 
 *Should we call out to building application/api key self service in the future?*
 
@@ -14,7 +16,7 @@ Under **My GPTs**, click **Create a GPT**. From the **Configure** tab, enter the
 
 ### GPT Instructions
 
-Instructions allow you to influence the behavior of your custom GPT. You can copy & paste the following starter instructions into the **Instructions** text box and edit them to your own liking:
+Instructions allow you to influence the behavior of your custom GPT. You can copy & paste the following starter instructions into the **Instructions** text box and edit them to your own liking.
 
 ```
 [to be determined]
