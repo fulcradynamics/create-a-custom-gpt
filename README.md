@@ -6,9 +6,9 @@ You can create & configure your own ChatGPT custom GPT via the following process
 
 ## ⚙️ [OAuth] Get Application Credentials
 
-OAuth applications allow ChatGPT to communicate with the Fulcra Life API on your behalf. Currently new applications are provisioned exclusively by Fulcra staff members. Reach out to a staff member on the Fulcra discord in `#custom-gpt-fulcra` and they can create a new OAuth application for you. You will receive two values that you will use when configuring your custom GPT, a **Client ID** and a **Client Secret**.
+OAuth applications allow ChatGPT to communicate with the Fulcra Life API on your behalf.
 
-*Should we call out to building application/api key self service in the future?*
+Currently new applications are provisioned exclusively by Fulcra staff members. Reach out to a staff member on the Fulcra discord in `#custom-gpt-fulcra` and they can create a new OAuth application for you. You will receive two values that you will use when configuring your custom GPT, a **Client ID** and a **Client Secret**.
 
 ## ⚙️ [ChatGPT] Configure Your Custom GPT
 
@@ -16,11 +16,15 @@ Under **My GPTs**, click **Create a GPT**. From the **Configure** tab, enter the
 
 ### GPT Instructions
 
-Instructions allow you to influence the behavior of your custom GPT. You can copy & paste the following starter instructions into the **Instructions** text box and edit them to your own liking.
+Instructions allow you to influence the behavior of your custom GPT. You can copy & paste the following starter instructions into the **Instructions** text box:
 
 ```
-[to be determined]
+1. At the beginning of a chat session make two initial requests to the Fulcra Life API before any other requests: First, make a request to the /user/v1/alpha1/info endpoint to retrieve the authenticated user's information. Second, make a request to the /data/v0/llm/metrics_catalog endpoint to retrieve a list of metrics that can be queried from the Fulcra Life API.
+
+2. Assume all times specified by a user are given in the user's local time zone. You will know the user's time zone from the information retrieved in the first instruction. When making requests to the Fulcra Life API that take date/time arguments, convert the time given by the user to UTC and use that value in the Life API request.
 ```
+
+Experiment with adding new instructions to your custom GPT. Could your custom GPT could speak like a pirate? Compose a daily mindfulness report? Write a limerick about your average heart rate?
 
 ### Configure Fulcra Life API Action
 
