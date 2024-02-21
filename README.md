@@ -1,4 +1,4 @@
-# 🤖 Setting up a Custom GPT with Fulcra Integration
+# 🤖 Setting up a Custom GPT with Fulcra Life API Integration
 
 Fulcra Users who are already sending data to the Fulcra Platform can integrate the Fulcra Life API with ChatGPT's Custom GPT functionality to create new and exciting ways to interact with their data.
 
