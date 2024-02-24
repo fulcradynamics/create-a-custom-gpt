@@ -34,8 +34,6 @@ Under **Actions**, click on the **Create new action** button.
 
 In the **Authentication** section, click the gear on the right and select `OAuth` authentication. Enter the **Client ID** & **Client Secret** values you received earlier.
 
-(XXX make the below copyable)
-
 **Authorization URL**
 ```
 https://auth.fulcradynamics.com/authorize
