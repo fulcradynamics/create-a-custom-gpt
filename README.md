@@ -34,10 +34,27 @@ Under **Actions**, click on the **Create new action** button.
 
 In the **Authentication** section, click the gear on the right and select `OAuth` authentication. Enter the **Client ID** & **Client Secret** values you received earlier.
 
-- Authorization URL is `https://auth.fulcradynamics.com/authorize`.
-- Token URL is `https://auth.fulcradynamics.com/oauth/token`.
-- Scope is `openid profile name email`.
-- Token Exchange Method is `Default (POST request)`.
+(XXX make the below copyable)
+
+**Authorization URL**
+```
+https://auth.fulcradynamics.com/authorize
+```
+
+**Token URL**
+```
+https://auth.fulcradynamics.com/oauth/token
+```
+
+**Scope**
+```
+openid profile name email
+```
+
+**Token Exchange Method**
+```
+Default (POST request)
+```
 
 Click the save button to save the Authentication configuration.
 
@@ -49,8 +66,10 @@ Click the **Import from URL** button and import the schema from `https://api.ful
 
 **Note** Whenever Fulcra makes changes to the Life API, you will need to re-import the schema.
 
+You can now click back to return to the main GPT configuration.
+
 ## ⚙️ [OAuth] Update OAuth application with redirect URL
 
-After configuring & saving the action, the **Configure** tab will display a **Callback URL** value similar to `https://chat.openai.com/aip/<hash>/oauth/callback`.
+After configuring the action, the GPT configuration section will show a **Callback URL** value similar to `https://chat.openai.com/aip/<hash>/oauth/callback`. You will need this value to complete your custom GPT's ability to communicate with the Fulcra Life API.
 
-Your OAuth application will need this value in order to complete the authentication process. Reach out and provide the redirect URL to a Fulcra team member and they will update your OAuth application. Once confirmed, this will complete your custom GPT setup and your custom GPT should be able to make requests to the Fulcra Life API on your behalf.
+Reach out and provide the redirect URL to a Fulcra team member and they will update your OAuth application. Once confirmed, this will complete your custom GPT setup and your custom GPT should be able to make requests to the Fulcra Life API on your behalf.
