@@ -62,7 +62,8 @@ In order to allow your custom GPT to know how to communicate with the Fulcra Lif
 
 Click the **Import from URL** button and import the schema from `https://api.fulcradynamics.com/data/v0/llm/openapi.json`. This will load the JSON spec into the Schema text box and populate a list of available actions.
 
-**Note** Whenever Fulcra makes changes to the Life API, you will need to re-import the schema.
+> [!IMPORTANT]
+> Whenever Fulcra makes changes to the Life API, you will need to re-import the schema.
 
 You can now click back to return to the main GPT configuration.
 
@@ -71,3 +72,6 @@ You can now click back to return to the main GPT configuration.
 After configuring the action, the GPT configuration section will show a **Callback URL** value similar to `https://chat.openai.com/aip/<hash>/oauth/callback`. You will need this value to complete your custom GPT's ability to communicate with the Fulcra Life API.
 
 Reach out and provide the redirect URL to a Fulcra team member and they will update your OAuth application. Once confirmed, this will complete your custom GPT setup and your custom GPT should be able to make requests to the Fulcra Life API on your behalf.
+
+> [!CAUTION]
+> If you make any changes to the Fulcra Life API Action of your custom GPT, it's highly likely the **Callback URL** will change. If authentication through your custom GPT starts giving `invalid_request` errors, double check the **Callback URL** value in your configuration and reach out to Fulcra staff with the new value.
